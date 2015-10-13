@@ -1,0 +1,6 @@
+E:\003GitHub\2048\2048Console\2048Console\bin\Debug\2048Console.exe.config
+E:\003GitHub\2048\2048Console\2048Console\bin\Debug\2048Console.exe
+E:\003GitHub\2048\2048Console\2048Console\bin\Debug\2048Console.pdb
+E:\003GitHub\2048\2048Console\2048Console\obj\Debug\2048Console.csprojResolveAssemblyReference.cache
+E:\003GitHub\2048\2048Console\2048Console\obj\Debug\2048Console.exe
+E:\003GitHub\2048\2048Console\2048Console\obj\Debug\2048Console.pdb
