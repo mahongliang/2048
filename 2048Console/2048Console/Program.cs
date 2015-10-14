@@ -8,12 +8,14 @@ namespace _2048Console
 {
     class Program
     {
+        public static int mySorce;
         static void Main(string[] args)
         {
             int[,] a = new int[4, 4];
             a[0, 0] = 2;
             a[0, 1] = 2;
             a[0, 3] = 2;
+            mySorce = 0;
 
             RePaint(a);
             while(true)
@@ -58,7 +60,7 @@ namespace _2048Console
             }
         }
         //向左移动并合并相同的元素
-        public static int[,] Merge(int[,] a)
+        public  static int[,] Merge(int[,] a)
         {           
             for(int i=0; i< a.GetLength(0); i++)
             {
@@ -75,7 +77,8 @@ namespace _2048Console
                     {
                         a[i, last_j] = 0;
                         a[i, j] = lastNum + a[i, j];
-                        lastNum = a[i, j];//改了一个bug
+                        mySorce += 2 * lastNum;
+                        lastNum = a[i, j];//改了一个bug                      
                     }
                 }
 
@@ -221,6 +224,7 @@ namespace _2048Console
         public static void RePaint(int[,] a)
         {
             Console.Clear();
+            Console.WriteLine("My Sorce is{0}", mySorce);
             for(int j=0; j< a.GetLength(1);j++)
             {
                 Console.Write("----");
